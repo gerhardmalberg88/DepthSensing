@@ -11,7 +11,7 @@
 Start the hardware setup by booting the Linux Machine. Open the terminal and type  
 $ dmesg –w  
 To get information about the system diagnostic. Then plug ZED2 camera USB cable to Linux Machine USB port. New USB device must become visible at the real-time diagnostic output. Hardware is now successfully set up. 
-## Software setup and Installation
+### Software setup and Installation
 Start the software setup by downloading the ZED SDK for your Linux Machine from:  
 https://www.stereolabs.com/developers/release/  
 Go to the directory where the installer has been downloaded.  
@@ -40,7 +40,7 @@ $ cd DepthSensign
 
 Depth sensing program and web server need to be set up separately.   
   
-To set up Depth sensing program, navigate to DEPTHSENSING directory.  
+### To set up Depth sensing program, navigate to DEPTHSENSING directory.  
 $ cd DEPTHSENSING  
 
 Make new directory named build if it is not created and navigate there.  
@@ -55,7 +55,7 @@ $ sudo make
 
 Depth sensing program is now successfully set up.   
    
-To set up web server, navigate to SERVER/html directory.  
+### To set up web server, navigate to SERVER/html directory.  
 $ cd SERVER/html  
 
 Give permission to all content in directory.  
