@@ -107,7 +107,7 @@ and
 /var/www/html/  
 by modifying the apache2.config  file.  
 
-Web server is successfully set up.  
+Web server is now successfully set up.  
 
 ### Launch Depth Sensing Program
 1. Navigate your build directory and execute program.
