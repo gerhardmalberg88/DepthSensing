@@ -101,5 +101,16 @@ sudo chmod 755 ExampleContent1 ExampleContent2
 ```
 sudo cp {ExampleContent1,ExampleContent2} /usr/lib/cgi-bin/  
 ```
-* Remember to make sure that apache server has given permission to others in the network to access your /usr/lib/cgi-bin/ and /var/www/html/ by modifying the apache2.config  
+* Remember to make sure that apache server has given permission to others in the network to access your
+/usr/lib/cgi-bin/   
+and  
+/var/www/html/  
+by modifying the apache2.config  file.  
+
 Web server is successfully set up.  
+
+### Launch Depth Sensing Program
+1. Navigate your build directory and execute program.
+```
+./DepthsensingV1
+```
