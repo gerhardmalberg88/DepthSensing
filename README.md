@@ -14,21 +14,21 @@ To get information about the system diagnostic. Then plug ZED2 camera USB cable 
 ### Software setup and Installation
 Start the software setup by downloading the ZED SDK for your Linux Machine from:  
 https://www.stereolabs.com/developers/release/  
-Go to the directory where the installer has been downloaded.  
+* Go to the directory where the installer has been downloaded.  
 $ cd path/to/download/directory  
 
-Add execution permission to the installer using the chmod +x command. Make sure to replace the installer name with the version you downloaded.  
+* Add execution permission to the installer using the chmod +x command. Make sure to replace the installer name with the version you downloaded.  
 $ chmod +x ZED_SDK_Tegra_JP45_v3.4.2.run   
 
-Run the ZED SDK installer.    
+* Run the ZED SDK installer.    
 $ ./ ZED_SDK_Tegra_JP45_v3.4.2.run  
 
-At the beginning of the installation, the Software License will be displayed, hit q after reading it.  
+* At the beginning of the installation, the Software License will be displayed, hit q after reading it.  
 During the installation, you might have to answer some questions on dependencies, tools and samples installation. Type y for yes and n for no and hit Enter. Hit Enter to pick the default option.  
 After the ZED SDK is installed clone DepthSensing repository to your local repository by navigating to the directory you want the program to be build. Start by navigating to your chosen directory (for example to the home directory).  
 $ cd /home/username/  
 
-Make new directory and navigate there.  
+* Make new directory and navigate there.  
 $ mkdir depthsensing  
 $ cd depthsensing  
 
@@ -40,17 +40,19 @@ $ cd DepthSensign
 
 Depth sensing program and web server need to be set up separately.   
   
-### To set up Depth sensing program, navigate to DEPTHSENSING directory.  
-$ cd DEPTHSENSING  
+### To set up Depth sensing program
+1. Navigate to DEPTHSENSING directory.  
+"""cd DEPTHSENSING
+"""
 
-Make new directory named build if it is not created and navigate there.  
+2. Make new directory named build if it is not created and navigate there.  
 $ mkdir build  
 $ cd build  
 
-Generate native makefiles from CMake project file.  
+3. Generate native makefiles from CMake project file.  
 $ sudo cmake ..  
 
-Preprocess, compile, assemble and link.  
+4. Preprocess, compile, assemble and link.  
 $ sudo make  
 
 Depth sensing program is now successfully set up.   
