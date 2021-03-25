@@ -10,7 +10,8 @@
 ###	Hardware Setup
 1. Start the hardware setup by booting the Linux Machine. 
 2. Open the terminal and type  
-```dmesg –w  
+```
+dmesg –w  
 ```
 * To get information about the system diagnostic. Then plug ZED2 camera USB cable to Linux Machine USB port. New USB device must become visible at the real-time diagnostic output. Hardware is now successfully set up. 
 ### Software setup and Installation
@@ -49,7 +50,7 @@ $ cd DepthSensign
 ```
 Depth sensing program and web server need to be set up separately.   
   
-### Set up Depth sensing program
+### Set up Depth Sensing program
 1. Navigate to DEPTHSENSING directory.  
 ```cd DEPTHSENSING
 ```
