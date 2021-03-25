@@ -23,26 +23,28 @@ $ cd path/to/download/directory
 ```
 * Add execution permission to the installer using the chmod +x command. Make sure to replace the installer name with the version you downloaded.  
 ```
-$ chmod +x ZED_SDK_Tegra_JP45_v3.4.2.run   
+chmod +x ZED_SDK_Tegra_JP45_v3.4.2.run   
 ```
 * Run the ZED SDK installer.    
 ```
-$ ./ ZED_SDK_Tegra_JP45_v3.4.2.run  
+./ ZED_SDK_Tegra_JP45_v3.4.2.run  
 ```
 * At the beginning of the installation, the Software License will be displayed, hit q after reading it.  
 During the installation, you might have to answer some questions on dependencies, tools and samples installation. Type y for yes and n for no and hit Enter. Hit Enter to pick the default option.  
-After the ZED SDK is installed clone DepthSensing repository to your local repository by navigating to the directory you want the program to be build. Start by navigating to your chosen directory (for example to the home directory).  
+
+### Generating Makefiles
+
 ```
-$ cd /home/username/  
+cd /home/username/  
 ```
 * Make new directory and navigate there. 
 ``` 
-$ mkdir depthsensing  
-$ cd depthsensing  
+mkdir depthsensing  
+cd depthsensing  
 ```
  Then clone DepthSensing git repository.  
 ```
-$ git clone https://github.com/gerhardmalberg88/DepthSensing.git  
+git clone https://github.com/gerhardmalberg88/DepthSensing.git  
 ```
 Navigate to DepthSensing directory.  
 ```
@@ -50,7 +52,7 @@ $ cd DepthSensign
 ```
 Depth sensing program and web server need to be set up separately.   
   
-### Set up Depth Sensing program
+### Depth Sensing Program Setup
 1. Navigate to DEPTHSENSING directory.  
 ```cd DEPTHSENSING
 ```
@@ -70,7 +72,7 @@ $ sudo make
 ```
 Depth sensing program is now successfully set up.   
    
-### Set up Web Server
+### Web Server Setup
 1. Navigate to SERVER/html directory.  
 ```
 $ cd SERVER/html  
